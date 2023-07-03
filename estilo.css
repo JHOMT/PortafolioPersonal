@@ -144,6 +144,13 @@ main{
 .bx{
     color: var(--fondo-contenedor);
 }
+.descargarCV{
+    background-color: var(--fondo-contenedor);
+    cursor: pointer;
+    justify-content: center;
+    height: 50px;
+    border-radius: 10px;
+}
 .container2{
     display: block;
     padding-left: 5%;
@@ -464,17 +471,7 @@ p{
 .fotoproyecto{
     width: 70%;
 }
-.descargarCV{
-    color: var(--fondo-contenedor);
-    padding: 10px 20px;
-    border: 1px solid var(--fondo-contenedor);
-    border-radius: 900px;
-    cursor: pointer;
-}
 
-.descargarCV:hover {
-background-color: #45a049;
-}
 @media screen and (max-width: 680px) { 
     * {
         box-sizing: border-box;
@@ -727,5 +724,10 @@ background-color: #45a049;
     }
     .imagenInformacion{
         height: 15%;
+    }
+    .descargarCV{
+        height: 10;
+        cursor: pointer;
+        height: 1%;
     }
 }
