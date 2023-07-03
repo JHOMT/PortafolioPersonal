@@ -24,8 +24,7 @@
             </nav>
             <nav class="correo_personal">
                 <i class='bx bx-envelope'></i>
-                <a href="mailto:jhomti2002@gmail.com" class="correo_link">
-                    jhomti2002@gmail.com</a>
+                <a href="mailto:jhomti2002@gmail.com" class="correo_link">jhomti2002@gmail.com</a>
             </nav>
             <nav class="modo">
                 <i class='bx bxs-sun' id="sun"></i>
@@ -44,9 +43,12 @@
         <section class="container1">
             <a href="https://www.linkedin.com/in/jhomt"><i class='bx bxl-linkedin'></i></a>
             <a href="https://github.com/JHOMT"><i class='bx bxl-github' ></i></a>
-            <a href="archivos\Curriculum JHON MENDOZA.pdf" download class="descargarCV">
-                <img src="Iconos/bandeja-de-descarga.png" alt="descargarCV"  class="descargarCV">
-              </a>
+            <a href="archivos\Curriculum JHON MENDOZA.pdf" download>
+                <div class="cv">
+                    <i class='bx bxs-cloud-download' ></i>
+                    <p>descargar CV</p>
+                </div>
+            </a>
         </section>
         <section class="personal1">
             <section class="informacion_entrada">
@@ -76,9 +78,7 @@
                 <div class="divFormacion">
                     <img src="Imagenes/utp.jpg" alt="UTP" class="fotoFormacion">
                     <p>Soy un estudiante de ingeniería en sistemas e informática en la Universidad Tecnológica de Perú. Mi formación me ha proporcionado sólidos conocimientos en áreas clave como bases de datos, programación en Java, desarrollo web con HTML y CSS, y creación de experiencias interactivas con JavaScript. También me he mantenido actualizado con cursos y talleres adicionales para ampliar mis habilidades. Estoy emocionado por aplicar mis conocimientos y habilidades en un entorno laboral y contribuir al éxito de un equipo.</p>
-                
                 </div>
-                
             </div>
             <div class="habilidadI">
                 <h1>Habilidades</h1>
@@ -94,6 +94,14 @@
                     <div class="Lenguage">
                         <img src="Iconos/js.png" alt="JavaScript" class="logos">
                         <p>JavaScript</p>
+                    </div>
+                    <div class="Lenguage">
+                        <img src="Iconos/java.png" alt="Java" class="logos">
+                        <p>Java</p>
+                    </div>
+                    <div class="Lenguage">
+                        <img src="Iconos/mysql.png" alt="MySQL" class="logos">
+                        <p>MySQL</p>
                     </div>
                 </div>
             </div>
@@ -119,17 +127,13 @@
                     <h1>Contactame</h1>
                     <form> 
                         <label for="nombreapellido">Nombre y Apellido</label>
-                        <input type="text" id="nombreapellido" class="input-padron" required> 
-            
+                        <input type="text" id="nombreapellido" class="input-padron" required>
                         <label for="correoelectronico">Correo Electronico</label>
                         <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
-            
                         <label for="telefono">Telefono</label>
                         <input type="tel" id="telefono" class="input-padron" required placeholder="(xxx) xxx xxx xxx">
-            
                         <label for="mesaje">Mensaje</label>
                         <textarea name="" id="" cols="70" rows="10" id="mesaje" class="input-padron"></textarea required>
-            
                         <input type="submit" value="Enviar Formulario" class="enviar">
                     </form>
                 </div>

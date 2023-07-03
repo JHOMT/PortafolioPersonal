@@ -6,19 +6,15 @@
     --background-claro: #e0e5ec;
     --gray-claro: #797d7f;
     --color-texto-claro: #000;
-  
     --fondo-oscuro: #222222;
     --background-oscuro: #333333;
     --gray-oscuro: #999999;
     --color-texto-oscuro: #fff;
-
-  }
-
-  body {
+}
+body {
     background-color: var(--fondo);
     color: var(--color-texto-claro);
-  }
-  
+}
 header{
     display: flex;
     padding: 20px;
@@ -53,12 +49,10 @@ header{
     color: var(--color-texto);
     text-decoration: none;
     transition: color 0.3s ease-in-out;
-  }
-  
-  .correo_link:hover , .bx:hover {
+} 
+.correo_link:hover , .bx:hover {
     color: var(--color-texto-hover);
-  }
-  
+}
 .modo{
     text-align: center;
     display: flex;
@@ -71,18 +65,14 @@ header{
 .modo .bx {
     font-size: 24px;
     cursor: pointer;
-  }
-  
+}
 .modo .bx.bxs-sun {
     color: yellow;
 }
-  
-  .modo .bx.bxs-moon {
+.modo .bx.bxs-moon {
     color: #000;
-  }
-
-  
-  body.fondo-oscuro {
+}
+body.fondo-oscuro {
     --fondo: var(--fondo-oscuro);
     --fondo-contenedor: var(--fondo-claro);
     --background: var(--background-oscuro);
@@ -90,15 +80,14 @@ header{
     --color-texto: var(--color-texto-oscuro);
     color: var(--color-texto-oscuro);
 }
-  
-  body.fondo-claro {
+body.fondo-claro {
     --fondo: var(--fondo-claro);
     --fondo-contenedor: var(--fondo-oscuro);
     --background: var(--background-claro);
     --gray: var(--gray-claro);
     --color-texto: var(--color-texto-claro);
     color: var(--color-texto-claro);
-  }
+}
 .iconos_iformacion{
     width: 25%;
     height: 100%;
@@ -140,16 +129,28 @@ main{
     font-size: 60px;
     padding-top: 30vh;
     margin-left: 1rem;
+    text-align: center;
 }
 .bx{
     color: var(--fondo-contenedor);
+    margin-top: 5%;
+    margin-bottom: 0px;
+    text-align: justify;
 }
-.descargarCV{
-    background-color: var(--fondo-contenedor);
-    cursor: pointer;
+.cv {
+    text-align: center;
     justify-content: center;
-    height: 50px;
-    border-radius: 10px;
+    align-items: center;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+.cv p, .cv i{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: none;
 }
 .container2{
     display: block;
@@ -164,17 +165,16 @@ main{
 }
 .quien_soy {
     animation: initialAnimation 2s ease-in-out;
-  }
-  
-  @keyframes initialAnimation {
+} 
+@keyframes initialAnimation {
     0% {
-      opacity: 0;
+          opacity: 0;
     }
     100% {
-      opacity: 1;
+          opacity: 1;
     }
-  }
-  .comment {
+}
+.comment {
     position: relative;
     width: 40%;
     padding: 10px;
@@ -182,40 +182,34 @@ main{
     border-radius: 5px;
     color: var(--background);
     animation: initialAnimation 4s ease-in-out;
-  }
-  
-  .comment-content {
+}
+.comment-content {
     margin-bottom: 10px;
     align-items: center;
     display: flex;
     justify-content: center;
     filter: drop-shadow(9px 9px 16px rgba(14, 14, 15, 6)) drop-shadow(-9px -9px 16px rgba(255, 255, 255, 0.5));
-  }
-  
-.comment-triangle {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  filter: drop-shadow(9px 9px 16px rgba(14, 14, 15, 6)) drop-shadow(-9px -9px 16px rgba(255, 255, 255, 0.5));
-  border-top: 10px solid var(--fondo-contenedor);
 }
-
-
-    h1 {
+.comment-triangle {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    filter: drop-shadow(9px 9px 16px rgba(14, 14, 15, 6)) drop-shadow(-9px -9px 16px rgba(255, 255, 255, 0.5));
+    border-top: 10px solid var(--fondo-contenedor);
+}
+h1 {
     margin-top: 20px;
     font-size: 24px;
     color: var(--color-titulo);
-  }
-  
-  p {
+}
+p {
     font-size: 16px;
     color: var(--color-texto);
-  }
-  
+}
 .quien_soy h1{
     font-size: 300%;
     filter: drop-shadow(9px 9px 16px rgba(14, 14, 15, 6)) drop-shadow(-9px -9px 16px rgba(255, 255, 255, 0.5));
@@ -288,7 +282,6 @@ main{
 .informacion_imagen{
     width: 30%;
 }
-
 .informacion{
     height: 100%;
     margin: 2%;
@@ -545,56 +538,49 @@ p{
         flex-direction: column;
         min-height: 100vh;
     }
-      
-      .container1,
-      .container2 {
+    .container1,
+    .container2 {
         width: 100%;
         max-width: 100%;
         padding: 10px;
-      }
-      .parrafoC2{
+    }
+    .parrafoC2{
         text-align:  justify;
         justify-content: center;
         align-items: center;
     }
-      .informacion_entrada,
-      .habilidades,
-      .informacion_personal,
-      .proyectos {
+    .informacion_entrada,
+    .habilidades,
+    .informacion_personal,
+    .proyectos {
         width: 100%;
-      }
-      
-      .habilidades_2 {
+    }  
+    .habilidades_2 {
         display: flex;
         flex-direction: column;
         gap: 20px;
-      }
-      
-      .habiliades_img {
+    }  
+    .habiliades_img {
         width: 100%;
-      }
-      
-      .informacion_vida {
+    }
+    .informacion_vida {
         display: flex;
         flex-direction: column;
         gap: 20px;
-      }
-      
-      .proyectos2 {
+    } 
+    .proyectos2 {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 20px;
-      }
-      
-      .contenedor_proyectos {
+    } 
+    .contenedor_proyectos {
         flex-basis: calc(33.33% - 20px);
-      }
-      
-      .iconos_footer {
+    }
+    .iconos_footer {
         gap: 10px;
-      }
-      .container1{
+    }
+    .container1{
         margin: 0px;
         width: 50px;height: auto;
     }
@@ -612,7 +598,6 @@ p{
         margin-top: 0px;
         width: auto;
     }
-
     .quien_soy h1{
         font-size: 30px;
         text-align: center;
@@ -620,7 +605,6 @@ p{
     .quien_soy p{
         font-size: 15px;
         margin-top: 3%;
-
     }
     .imagen_informacion {
         height: 300px;
@@ -630,7 +614,6 @@ p{
         padding: 5px;
         pointer-events: none;
         height: auto;
-
     }
     .backend p, .frotend p{
         font-size: 10px;
@@ -657,10 +640,10 @@ p{
     .personalInfo{
         font-size: 250%;
     }
-      .logo_principal,
-      .bx {
+    .logo_principal,
+    .bx {
         font-size: 20px;
-      }
+    }
     .proyectos{
         margin-top: 0px;
         height: auto;
@@ -691,9 +674,13 @@ p{
         justify-content: center;
         text-align: center;
         margin-top: 5%;
+        margin: 4%;
     }
     .logos{
-        height: 20px;
+        height: 15px;
+    }
+    .Lenguage p{
+        font-size: 12px;
     }
     .enviar{
         width: 100%;
