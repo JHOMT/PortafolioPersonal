@@ -13,7 +13,7 @@
     --color-texto-oscuro: #fff;
 
   }
-  
+
   body {
     background-color: var(--fondo);
     color: var(--color-texto-claro);
