@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,42 +14,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;display=swap'><link rel="stylesheet" href="./style.css">    
     <link rel="icon" href="Imagenes/logo.png">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/button.css">  
+    <link rel="stylesheet" href="css/personal.css">
     <title>Informacion personal</title>
+    <script>
+        const storageTheme = localStorage.getItem('theme');
+        const systemColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        const newTheme = storageTheme ?? systemColorScheme;
+        document.documentElement.setAttribute('data-theme', newTheme);
+    </script>
 </head>
 <body>
     <header>
-            <nav class="logo_portafolio">
-                <a href="index.html"><img src="Imagenes/logo.png" alt="Logo JHOMT" class="logo_principal"></a>
-            </nav>
-            <nav class="correo_personal">
-                <i class='bx bx-envelope'></i>
-                <a href="mailto:jhomti2002@gmail.com" class="correo_link">jhomti2002@gmail.com</a>
-            </nav>
-            <nav class="modo">
-                <i class='bx bxs-sun' id="sun"></i>
-                <i class='bx bxs-moon active' id="moon"></i>
-            </nav>
-            <nav class="iconos_iformacion">
-                <a href="Proyectos.html" class="proyectos"><p><span class="material-symbols-outlined icono">draft</span> Proyectos</p></a>
-                <a href="Personal.html" class="personal">
-                        <p><span class="material-symbols-outlined icono">
-                        person
-                        </span>Personal</p>
+        <nav class="logo_portafolio">
+            <a href="index.html"><img src="Imagenes/logo.png" alt="Logo JHOMT" class="logo_principal"></a>
+        </nav>
+        <nav class="correo_personal">
+            <a href="mailto:jhomti2002@gmail.com" class="correo_link">
+                <img src="Iconos/email.png" alt="email" class="iconoHeader">
+                <p>jhomti2002@gmail.com</p>
+            </a>
+        </nav>
+        <nav class="modo">
+            <div class="main__switcher">
+                <input type="checkbox" class="main__check">
+                <div class="main__option"></div>
+            </div>
+            <img src="Iconos/soleado.png" alt="tema claro" id="sun" class="iconoHeader">
+            <img src="Iconos/noche.png" alt="tema oscuro" id="moon" class="iconoHeader">
+        </nav>
+        <nav class="iconos_iformacion">
+            <div class="proyectoLink">
+                <a href="Proyectos.html" class="proyectos">
+                    <img src="Iconos/proyecto.png" alt="proyecto" class="iconoHeader">
+                    <p> Proyectos</p>
                 </a>
-            </nav>
+            </div>
+            <div class="informacionPLink">
+                <a href="Personal.html" class="personal">
+                    <img src="Iconos/informacion-personal.png" alt="informacion-personal" class="iconoHeader">    
+                    <p>Personal</p>
+                </a>
+            </div>
+        </nav>
     </header>
     <main>
         <section class="container1">
-            <a href="https://www.linkedin.com/in/jhomt"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/JHOMT"><i class='bx bxl-github' ></i></a>
-            <a href="archivos\Curriculum JHON MENDOZA.pdf" download>
-                <div class="cv">
-                    <i class='bx bxs-cloud-download' ></i>
-                    <p>descargar CV</p>
-                </div>
-            </a>
+            <a href="https://www.linkedin.com/in/jhomt"><img src="Iconos/linkedin.png" alt="linkedin" class="icono"></a>
+            <a href="https://github.com/JHOMT"><img src="Iconos/github.png" alt="github" class="icono"></a>
         </section>
         <section class="personal1">
             <section class="informacion_entrada">
@@ -62,7 +78,20 @@
                     </div>
                     <h1>Jhon Mendoza</h1>
                     <p>
-                        Soy JHOMT, estudiante de Ingeniería de Sistemas en la UTP, especializándome como desarrollador y backend Junior. Mi pasión por la tecnología me impulsa a aprender y crecer constantemente. Tengo sólidos conocimientos en desarrollo web, bases de datos y soluciones eficientes. Me destaco en el desarrollo backend, utilizando Java y Spring Boot para crear aplicaciones eficientes y de alto rendimiento. También tengo experiencia en el manejo de bases de datos con MySQL. Mi objetivo es contribuir en el desarrollo de soluciones tecnológicas, aportando pasión y dedicación. Estoy emocionado por las oportunidades que se presenten y ansioso por seguir aprendiendo y colaborando en proyectos innovadores.</p>
+                        Soy JHOMT, estudiante de Ingeniería de Sistemas en la UTP, especializándome como desarrollador y backend Junior. Mi pasión por la tecnología me impulsa a aprender y crecer constantemente. Tengo sólidos conocimientos en desarrollo web, bases de datos y soluciones eficientes. Me destaco en el desarrollo backend, utilizando Java y Spring Boot para crear aplicaciones eficientes y de alto rendimiento. También tengo experiencia en el manejo de bases de datos con MySQL. Mi objetivo es contribuir en el desarrollo de soluciones tecnológicas, aportando pasión y dedicación. Estoy emocionado por las oportunidades que se presenten y ansioso por seguir aprendiendo y colaborando en proyectos innovadores.
+                    </p>
+                    <div class="buttonConteiner">
+                        <a class="button" href="archivos/Curriculum JHON MENDOZA.pdf" download="Curriculum_JHON_MENDOZA.pdf">
+                            <ul>
+                                <li>&#68;esacargar CV</li>
+                                <li>&#68;esacargando CV</li>
+                            </ul>
+                            <div>
+                                <svg viewBox="0 0 24 24"></svg>
+                            </div>
+                        </a>
+                    </div>
+                    
                 </div>
                 <img src="Imagenes/jhomt.png" alt="Jhomt" class="imagen_informacion">
             </section>
@@ -127,14 +156,18 @@
                 <div class="formulario">
                     <h1>Contactame</h1>
                     <form> 
-                        <label for="nombreapellido">Nombre y Apellido</label>
-                        <input type="text" id="nombreapellido" class="input-padron" required>
-                        <label for="correoelectronico">Correo Electronico</label>
-                        <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
-                        <label for="telefono">Telefono</label>
-                        <input type="tel" id="telefono" class="input-padron" required placeholder="(xxx) xxx xxx xxx">
-                        <label for="mesaje">Mensaje</label>
-                        <textarea name="" id="" cols="70" rows="10" id="mesaje" class="input-padron"></textarea required>
+                        <label for="nombreapellido">Nombre y Apellido
+                            <input type="text" id="nombreapellido" class="input-padron" required>
+                        </label>
+                        <label for="correoelectronico">Correo Electronico
+                            <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+                        </label>
+                        <label for="telefono">Telefono
+                            <input type="tel" id="telefono" class="input-padron" required placeholder="(xxx) xxx xxx xxx">
+                        </label>
+                        <label for="mesaje">Mensaje
+                            <textarea name="" id="" cols="70" rows="10" id="mesaje" class="input-padron"></textarea required>
+                        </label>
                         <input type="submit" value="Enviar Formulario" class="enviar">
                     </form>
                 </div>
@@ -145,8 +178,8 @@
         <div class="footer">
             <h2>Jhon Mendoza</h2>
             <div class="iconos_footer">
-                <a href="https://www.linkedin.com/in/jhomt"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/JHOMT"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.linkedin.com/in/jhomt"><img src="Iconos/linkedin.png" alt="linkedin" class="icono"></a>
+                <a href="https://github.com/JHOMT"><img src="Iconos/github.png" alt="github" class="icono"></a>
             </div>
             <div class="correo_personal_footer">
                 <i class='bx bx-envelope'></i>
@@ -154,7 +187,9 @@
                     jhomti2002@gmail.com</a>
             </div>
         </div>
-        </footer>
-        <script src="main.js"></script>
+    </footer>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js'></script><script  src="./script.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/button.js"></script>
 </body>
 </html>

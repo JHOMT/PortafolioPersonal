@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,8 +14,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <link rel="icon" href="Imagenes/logo.png">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/estilo.css">
     <title>Portafolio</title>
+    <script>
+        const storageTheme = localStorage.getItem('theme');
+        const systemColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        const newTheme = storageTheme ?? systemColorScheme;
+        document.documentElement.setAttribute('data-theme', newTheme);
+    </script>
 </head>
 <body>
     <header>
@@ -23,33 +29,38 @@
             <a href="index.html"><img src="Imagenes/logo.png" alt="Logo JHOMT" class="logo_principal"></a>
         </nav>
         <nav class="correo_personal">
-            <i class='bx bx-envelope'></i>
             <a href="mailto:jhomti2002@gmail.com" class="correo_link">
-                jhomti2002@gmail.com</a>
+                <img src="Iconos/email.png" alt="email" class="iconoHeader">
+                <p>jhomti2002@gmail.com</p>
+            </a>
         </nav>
         <nav class="modo">
-            <i class='bx bxs-sun' id="sun"></i>
-            <i class='bx bxs-moon active' id="moon"></i>
+            <div class="main__switcher">
+                <input type="checkbox" class="main__check">
+                <div class="main__option"></div>
+            </div>
+            <img src="Iconos/soleado.png" alt="tema claro" id="sun" class="iconoHeader">
+            <img src="Iconos/noche.png" alt="tema oscuro" id="moon" class="iconoHeader">
         </nav>
         <nav class="iconos_iformacion">
-            <a href="Proyectos.html" class="proyectos"><p><span class="material-symbols-outlined icono">draft</span> Proyectos</p></a>
-            <a href="Personal.html" class="personal">
-                    <p><span class="material-symbols-outlined icono">
-                    person
-                    </span>Personal</p>
-            </a>
+            <div class="proyectoLink">
+                <a href="Proyectos.html" class="proyectos">
+                    <img src="Iconos/proyecto.png" alt="proyecto" class="iconoHeader" id="iconoHeader">
+                    <p> Proyectos</p>
+                </a>
+            </div>
+            <div class="informacionPLink">
+                <a href="Personal.html" class="personal">
+                    <img src="Iconos/informacion-personal.png" alt="informacion-personal" class="iconoHeader" id="iconoHeader">    
+                    <p>Personal</p>
+                </a>
+            </div>
         </nav>
     </header>
     <main>
         <section class="container1">
-            <a href="https://www.linkedin.com/in/jhomt"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/JHOMT"><i class='bx bxl-github' ></i></a>
-            <a href="archivos\Curriculum JHON MENDOZA.pdf" download >
-                <div class="cv">
-                    <i class='bx bxs-cloud-download' ></i>
-                    <p>descargar CV</p>
-                </div>
-            </a>
+            <a href="https://www.linkedin.com/in/jhomt"><img src="Iconos/linkedin.png" alt="linkedin" class="icono"></a>
+            <a href="https://github.com/JHOMT"><img src="Iconos/github.png" alt="github" class="icono"></a>
         </section>
         <section class="container2">
             <section class="informacion_entrada">
@@ -134,8 +145,8 @@
     <div class="footer">
         <h2>Jhon Mendoza</h2>
         <div class="iconos_footer">
-            <a href="https://www.linkedin.com/in/jhomt"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/JHOMT?tab=repositories"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.linkedin.com/in/jhomt"><img src="Iconos/linkedin.png" alt="linkedin" class="icono"></a>
+            <a href="https://github.com/JHOMT"><img src="Iconos/github.png" alt="github" class="icono"></a>
         </div>
         <div class="correo_personal_footer">
             <i class='bx bx-envelope'></i>
@@ -144,6 +155,6 @@
         </div>
     </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
