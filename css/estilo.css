@@ -88,10 +88,10 @@ body {
 
 
 .main__switcher {
-    width: 100px;
+    width: 200px;
     margin: 0 auto;
     padding: 5px 10px;
-    height: 50px;
+    height: 100px;
     border-radius: 999999px;
     background-color: var(--color-switcher);
 
@@ -112,8 +112,8 @@ body {
 }
 
 .main__option {
-    width: 40px;
-    height: 40px;
+    width: 90px;
+    height: 90px;
     background-color: var(--color-active);
     border-radius: 50%;
     border: var(--border-option);
@@ -140,9 +140,9 @@ header{
     height: 10%;
     width: 10%;
 }
-.logo_principal{
+a .logo_principal{
     margin-left: 2rem;
-    height: 70px;
+    height: 250px;
     width: auto;
     filter: drop-shadow(9px 9px 16px rgba(14, 14, 15, 6)) drop-shadow(-9px -9px 16px rgba(255, 255, 255, 0.5));
 }
@@ -154,6 +154,7 @@ header{
     width: 15%;
     
 }
+
 .correo_link {
     color: var(--color-texto);
     text-decoration: none;
@@ -163,11 +164,16 @@ header{
     text-align: center;
     align-items: center;
 } 
+
 .correo_link .iconoHeader{
     margin-right: 0.5rem;
 }
+.iconoHeader{
+    height: 100px;
+    margin-right: 50px;
+}
 .correo_link:hover , .bx:hover {
-    color: var(--color-texto-hover);
+    color: blue;
 }
 .modo{
     display: flex;
@@ -176,10 +182,7 @@ header{
     width: 30%;
     height: 100%;
 }
-.iconoHeader{
-    height: 50px;
-    margin-right: 4rem;
-}
+
 
 .iconos_iformacion{
     width: 40%;
@@ -220,7 +223,7 @@ p a{
     margin: auto;
 }
 .proyectos .iconoHeader, .personal .iconoHeader{
-    height: 45px;
+    height: 150px;
     display: flex;
     margin-right: 0;
 }
@@ -233,8 +236,10 @@ main{
 .container1{
     align-items: center;
     justify-content: center;
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
     width: 10%;
+    height: 100%;
     font-size: 60px;
     padding-top: 30vh;
     margin-left: 1rem;
@@ -261,7 +266,7 @@ a{
     margin-bottom: 0px;
 }
 .icono{
-    height: 70px;
+    height: 150px;
     margin: 1rem;
 }
 .container2{
@@ -270,28 +275,33 @@ a{
 }
 .informacion_entrada{
     display: flex;
-    height: 25%;
+    height: 30%;
     justify-content: center;
     align-items: center;
-    
+    padding: 3rem;
 }
 .quien_soy {
     animation: initialAnimation 2s ease-in-out;
+    padding: 4rem;
 } 
+
 @keyframes initialAnimation {
     0% {
-          opacity: 0;
+        opacity: 0;
     }
     100% {
-          opacity: 1;
+        opacity: 1;
     }
 }
 .comment {
     position: relative;
     width: 40%;
-    padding: 10px;
+    height: 200px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
     background-color: var(--fondo-contenedor);
-    border-radius: 5px;
+    border-radius: 24px;
     color: var(--background);
     animation: initialAnimation 4s ease-in-out;
 }
@@ -304,6 +314,7 @@ a{
 }
 .comment-content h2{
     color: var(--text-triangle);
+    font-size: 100px;
 }
 .comment-triangle {
     position: absolute;
@@ -311,24 +322,25 @@ a{
     left: 50%;
     transform: translateX(-50%);
     height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
     filter: drop-shadow(9px 9px 16px rgba(14, 14, 15, 6)) drop-shadow(-9px -9px 16px rgba(255, 255, 255, 0.5));
-    border-top: 10px solid var(--fondo-contenedor);
+    border-top: 30px solid var(--fondo-contenedor);
 }
 h1 {
-    margin-top: 20px;
-    font-size: 24px;
+    margin: 4rem;
     color: var(--color-titulo);
+    font-size: 200px;
 }
 p {
-    font-size: 16px;
+    font-size: 60px;
     color: var(--color-texto);
 }
 .quien_soy h1{
-    font-size: 300%;
+    font-size: 300px;
     filter: drop-shadow(9px 9px 16px rgba(14, 14, 15, 6)) drop-shadow(-9px -9px 16px rgba(255, 255, 255, 0.5));
 }
+
 .parrafoC2{
     text-align:  justify;
     justify-content: center;
@@ -355,7 +367,7 @@ p {
     -8px -8px 50px rgba(255, 255, 255, 0.8), 3px 3px 25px rgba(0, 0, 0, 0.6);
 }
 .titulo_habilidades{
-    font-size: 200%;
+    font-size: 150px;
     margin-left: 3% ;
     filter: drop-shadow(9px 9px 16px rgba(14, 14, 15, 10)) drop-shadow(-9px -9px 16px rgba(255, 255, 255, 0.5));
 }
@@ -367,6 +379,13 @@ p {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+.backend h2, .frotend h2{
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 5%;
+    filter: drop-shadow(9px 9px 16px rgba(14, 14, 15, 10)) drop-shadow(-9px -9px 16px rgba(255, 255, 255, 0.5));
 }
 .habiliades_img{
     height: 100%;
@@ -405,6 +424,16 @@ p {
 }
 .proyectos{
     display: block;
+    width: 93%;
+}
+.proyectosImages{
+    display: block;
+    width: 93%;
+    margin-bottom: 25%;
+}
+.title_proyectos{
+    background-color: red;
+    font-size: 200px;
 }
 .proyectos2{
     width: 78%;
@@ -442,12 +471,18 @@ footer{
     -8px -8px 50px rgba(255, 255, 255, 0.8), 3px 3px 25px rgba(0, 0, 0, 0.6);
 }
 .footer{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.footer h2, .footer a{
+    font-size: 60px;
 }
 .iconos_footer{
     display: flex;
     justify-content: center;
-    font-size: 200%;
+    height: 100px;
+    margin-right: 2rem;
 }
 .correo_personal_footer{
     margin-top: 1rem;
@@ -459,11 +494,9 @@ footer{
 }
 
 
-@media screen and (max-width: 680px) { 
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
+@media screen and (max-width: 768px) { 
+    body {
+        font-size: 14px; /* Puedes ajustar el tamaño del texto para pantallas más pequeñas */
     }
     .container2,
     .informacion_entrada,
@@ -478,34 +511,35 @@ footer{
         font-size: 10px;
     } 
     header{
-        width: 100%;
+        width:95%;
         font-size: 2px;
         margin: 0;
         display: flex;
     }
-    .logo_principal{
-        height: 35px;
+    header .logo_principal{
+        height: 25px;
+        margin-left: 0.5rem;
     }
     .correo_personal{
         text-decoration: none;
         list-style: none;
         display: flex;
         font-size: 1px;
-        width: 200px;
-        margin-left: 2%;
+        width: 70%;
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
     }
-    .correo_personal .bx, .correo_personal a{
-        margin: auto;
+    .correo_personal a{
         font-size: 10px;
     }
     .modo{
-        background-color: red;
+        width: 15%;
+        margin-left: 0.4rem;
     }
     .main__switcher{
         width: 35px;
-        margin: 0 auto;
+        margin: 0 auto 0 2rem;
         height: 15px;
-        border-radius: 999999px;
     }
     .main__check {
         position: absolute;
@@ -516,15 +550,13 @@ footer{
         cursor: pointer;
     }
     .main__option{
-        position: absolute;
-        width: 15px;
-        height: 15px;
+        visibility: hidden;
     }
     #sun, #moon{
         font-size: 20px;
     }
     .iconos_iformacion{
-        width: 200px;
+        width: 40%;
         margin: auto;
     }
     .personal{
@@ -534,6 +566,7 @@ footer{
     }
     .proyectos{
         display: flex;
+        flex-direction: column;
         font-size: 5px;
     }
     a p{
@@ -553,11 +586,43 @@ footer{
         flex-direction: column;
         min-height: 100vh;
     }
-    .container1,
-    .container2 {
-        width: 100%;
-        max-width: 100%;
-        padding: 10px;
+    .container1{
+        margin: 0px;
+        width: 50px;
+        height: auto;
+        display: block;
+    }
+    .container2{
+        width: 80%;
+        height: 80%;
+    }
+    .informacion_entrada{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .comment{
+        margin: 0;
+        width: 150px;
+        height: 40px;
+        border-radius: 10px;
+    }
+    .comment-content h2{
+        font-size: 10px;
+    }
+    .comment-triangle{
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid var(--fondo-contenedor);
+    }     
+    .comment {
+        width: 70%;
+        height: 60px;
+    }
+
+    .comment-triangle {
+        left: 50%;
+        transform: translateX(-50%);
     }
     .parrafoC2{
         text-align:  justify;
@@ -570,6 +635,45 @@ footer{
     .proyectos {
         width: 100%;
     }  
+    .informacion_entrada {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .quien_soy {
+        order: 2;
+        top: 0; /* Cambia el orden de aparición en dispositivos móviles */
+        text-align: center;
+        height: 800px;
+      }
+    #principal{
+        height: 400px;
+    }
+      .comment {
+        order: 1;
+        top: 0; /* Coloca el comentario primero en dispositivos móviles */
+      }
+    
+      .imagen_informacion {
+        order: 3; /* Coloca la imagen después del contenido en dispositivos móviles */
+        top: 0;
+        margin-top: 20px; /* Agrega un poco de espacio entre el contenido y la imagen */
+      }
+    
+      .descargaPDF {
+        order: 4; /* Coloca el botón de descarga al final en dispositivos móviles */
+      }
+      .parrafoC2{
+        display: flex;
+        text-align: justify;
+      }
+    .titulo_habilidades{
+        font-size: 20px;
+    }
+    .backend h2, .frotend h2{
+        font-size: 15px;
+    }
     .habilidades_2 {
         display: flex;
         flex-direction: column;
@@ -595,23 +699,9 @@ footer{
     .iconos_footer {
         gap: 10px;
     }
-    .container1{
-        margin: 0px;
-        width: 50px;height: auto;
-    }
-    .container2{
-        width: 87%;
-        height: 80%;
-    }
-    .informacion_entrada{
-        height: 20%;
-    }
+
     .quien_soy{
         margin-top: 0rem;
-    }
-    .comment{
-        margin-top: 0px;
-        width: auto;
     }
     .quien_soy h1{
         font-size: 30px;
@@ -672,8 +762,8 @@ footer{
         margin-top: 0px;
         height: auto;
     }
-    .proyectos h1{
-        font-size:40px;
+    .proyectosImages h1{
+        font-size:20px;
         margin-bottom: 2%;
         text-align: center;
     }
@@ -686,22 +776,43 @@ footer{
         width:250px;
     }
     footer{
+        width: 95%;
         margin-top: 0px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer h2{
+        font-size: 15px;
+    }
+    .iconos_footer{
+        height: 20px;
+    }
+    .correo_personal_footer a{
+        font-size: 15px;
     }
     .divhabilidad, .pasatiempoIconos{
+        width: 100%;
+        height: 50px;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: left;
+        align-items: left;
     }
     .Lenguage{
-        align-items: center;
+        display: flex;
         justify-content: center;
         text-align: center;
-        margin-top: 5%;
-        margin: 4%;
+        align-items: center;
+        height: 100%;
+        width: 30px;
+        margin: 0px 0px 0px 0px;
     }
-    .logos{
-        height: 15px;
+    .Lenguage img{
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
     }
     .Lenguage p{
         font-size: 12px;
@@ -712,19 +823,22 @@ footer{
     .input-padron{
         width: 100%;
     }
+    
     /*proyectos */
+    .container2 h1{
+        font-size: 20px;
+    }
+    .container2 p{
+        font-size: 10px;
+    }
     .fotos{
-        display: block;
-        align-items: center;
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
     }
     .divProyeto{
         margin-top: 7%;
     }
-    .experiencia, .formacion{
-        display: block;
-        align-items: center;
-    }
+
     .divExperiencia, .divFormacion{
         display: block;
         align-items: center;
@@ -741,4 +855,60 @@ footer{
         cursor: pointer;
         height: 1%;
     }
+
+    /* personal */
+    .divExperiencia, .divFormacion{
+        display: flex;
+        flex-direction: column;
+    }
+    .experiencia h1, .formacion h1, 
+    .habilidadI h1, .pasatiempos h1,
+    .formulario h1{
+        font-size: 15px;
+        margin-bottom: 1rem;
+    }
+    .divExperiencia p, .divFormacion p{
+        font-size: 10px;
+    }
+    .divFormacion .fotoFormacion, 
+    .divExperiencia .fotoFormacion{
+        height: 100px;
+    }
+    .formulario{
+        width: 100%;
+    }
+    ul li{
+        font-size: 20px;
+    }
+    .from{
+        width: 100%;
+        padding: 1rem;
+    }
+    form .enviar{
+        width: 60%;
+        height: 1%;
+        font-size: 10px;
+    }
+    .from label{
+        width: 100%;
+        font-size: 10px;
+    }
+    
+    .button {
+        width: 200px;
+        height: 100px;
+    }
+    .button ul {
+        font-size: 10px;
+    }
+
+    .button ul {
+        transform: translateY(-20%);
+    }
+
+    .button > div svg {
+        width: 160px;
+        height: 48px;
+    }
+
 }

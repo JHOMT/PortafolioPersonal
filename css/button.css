@@ -29,7 +29,7 @@
     display: flex;
     overflow: hidden;
     text-decoration: none;
-    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    --webkit-mask-image: -webkit-radial-gradient(white, black);
     background: var(--background);
     border-radius: 8px;
     box-shadow: 0 2px 8px -1px var(--shadow);
@@ -47,27 +47,25 @@
     position: relative;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
-    font-size: 16px;
+    font-size: 80px;
     font-weight: 500;
     line-height: 28px;
     color: var(--text);
+    padding: 3rem;
   }
   .button ul li:not(:first-child) {
-    top: 16px;
+    top: 50px;
     left: 0;
     right: 0;
     position: absolute;
   }
   .button ul li:nth-child(2) {
-    top: 76px;
-  }
-  .button ul li:nth-child(3) {
-    top: 136px;
+    top: 170px;
   }
   .button > div {
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: 200px;
+    height: 120px;
     background: var(--rectangle);
   }
   .button > div:before, .button > div:after {
@@ -77,16 +75,15 @@
   }
   .button > div:before {
     border-radius: 1px;
-    width: 2px;
+    width:  7px;
     top: 50%;
-    left: 50%;
-    height: 17px;
-    margin: -9px 0 0 -1px;
+    left: 45%;
+    height: 40px;
     background: var(--arrow);
   }
   .button > div:after {
-    width: 60px;
-    height: 60px;
+    width: 200px;
+    height: 200px;
     transform-origin: 50% 0;
     border-radius: 0 0 80% 80%;
     background: var(--success);
@@ -97,9 +94,8 @@
   .button > div svg {
     display: block;
     position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 50%;
+    width: 200px;
+    height: 60px;
     top: 50%;
     margin: -9px 0 0 -10px;
     fill: none;
