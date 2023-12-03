@@ -17,7 +17,6 @@
   --text: #F5F9FF;
   --success: #2F3545;
 }
-
 .button {
   --background: #275efe;
   --rectangle: #184fee;
@@ -29,11 +28,17 @@
   display: flex;
   overflow: hidden;
   text-decoration: none;
-  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  --webkit-mask-image: -webkit-radial-gradient(white, black);
   background: var(--background);
   border-radius: 8px;
   box-shadow: 0 2px 8px -1px var(--shadow);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+@media (min-width: 768px) {
+  .button {
+    box-shadow: 0 2px 8px -1px var(--shadow); /* Safari */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
 }
 .button:active {
   transform: scale(0.95);
@@ -41,7 +46,7 @@
 }
 .button ul {
   margin: 0;
-  padding: 16px 40px;
+  padding: 10px 32px;
   list-style: none;
   text-align: center;
   position: relative;
@@ -51,6 +56,15 @@
   font-weight: 500;
   line-height: 28px;
   color: var(--text);
+}
+@media (min-width: 768px) {
+  .button ul {
+    padding: 16px 40px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+  
 }
 .button ul li:not(:first-child) {
   top: 16px;

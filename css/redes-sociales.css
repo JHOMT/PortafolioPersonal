@@ -8,32 +8,29 @@
     --container-shadow:2.3px 2.3px 1.9px rgba(0, 0, 0, 0.035),5.4px 5.4px 4.3px rgba(0, 0, 0, 0.048),9.7px 9.7px 7.7px rgba(0, 0, 0, 0.054),16.1px 16.1px 12.8px rgba(0, 0, 0, 0.057),26.5px 26.5px 21.2px rgba(0, 0, 0, 0.062),46.2px 46.2px 37px rgba(0, 0, 0, 0.073),100px 100px 80px rgba(0, 0, 0, 0.12);
 }
 
-*,
-::before,
-::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .social-icon-list{
-    height: 100px;
-    width: 500px;
-    /* border: 1px solid #000; */
+    height: 70px;
+    width: 200px;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    justify-items: center;
     align-items: center;
-    column-gap: 20px;
+    column-gap: 10px;
     padding: 0 20px;
-    /* box-shadow: var(--container-shadow); */
-    /* background-color: var(--container-bg-color); */
+}
+@media (min-width: 768px) {
+    .social-icon-list{
+        height: 100%;
+        width: 350px;
+        border-radius: 20px;
+    }
 }
 
 .icon-group{
-    height: 50px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -43,8 +40,14 @@
     transition: all 1s ease;
 
 }
+@media (min-width: 768px) {
+    .icon-group{
+        height: 50px;
+        width: 60px;
+    }
+}
 .icon-group:hover{
-    width: 175px;
+    width: 120px;
     justify-content: space-around;
 }
 .icon-group:nth-child(1) {
@@ -73,7 +76,7 @@
 }
 
 .icon-group:hover .icon-text{
-    width: fit-content;
+    width: 70px;
     transition: width 1s ease;
 }
 
