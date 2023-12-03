@@ -11,9 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/46b7ceee20.js" crossorigin="anonymous"></script>
     <link rel="icon" href="Imagenes/logo.png">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/proyectos.css">
+    <link rel="stylesheet" href="css/redes-sociales.css">
     <title>Proyectos</title>
     <script>
         const storageTheme = localStorage.getItem('theme');
@@ -24,49 +26,39 @@
 </head>
 <body>
     <header>
-        <nav class="logo_portafolio">
-            <a href="index.html"><img src="Imagenes/logo.png" alt="Logo JHOMT" class="logo_principal"></a>
-        </nav>
-        <nav class="correo_personal">
-            <a href="mailto:jhomti2002@gmail.com" class="correo_link">
-                <img src="Iconos/email.png" alt="email" class="iconoHeader">
-                <p>jhomti2002@gmail.com</p>
+        <div class="logo">
+            <a href="index.html">
+                <img src="Imagenes/logo.png" alt="Logo JHOMT" class="logo_principal">
             </a>
-        </nav>
-        <nav class="modo">
+        </div>
+        <a href="mailto:jhomti2002@gmail.com" class="correo_link">
+            <img src="Iconos/email.png" alt="email" class="iconoHeader">
+            <p>jhomti2002@gmail.com</p>
+        </a>
+        <div class="modo">
             <div class="main__switcher">
                 <input type="checkbox" class="main__check">
                 <div class="main__option"></div>
             </div>
             <img src="Iconos/soleado.png" alt="tema claro" id="sun" class="iconoHeader">
             <img src="Iconos/noche.png" alt="tema oscuro" id="moon" class="iconoHeader">
-        </nav>
-        <nav class="iconos_iformacion">
-            <div class="proyectoLink">
-                <a href="Proyectos.html" class="proyectos">
-                    <img src="Iconos/proyecto.png" alt="proyecto" class="iconoHeader">
-                    <p> Proyectos</p>
-                </a>
-            </div>
-            <div class="informacionPLink">
-                <a href="Personal.html" class="personal">
-                    <img src="Iconos/informacion-personal.png" alt="informacion-personal" class="iconoHeader">    
-                    <p>Personal</p>
-                </a>
-            </div>
+        </div>
+        <nav class="enlaces">
+            <a href="Proyectos.html" class="proyectos">
+                <img src="Iconos/proyecto.png" alt="proyecto" class="iconoHeader" >
+            </a>
+            <a href="Personal.html" class="personal">
+                <img src="Iconos/informacion-personal.png" alt="informacion-personal" class="iconoHeader">    
+            </a>
         </nav>
     </header>
     <main>
-        <section class="container1">
-            <a href="https://www.linkedin.com/in/jhomt"><img src="Iconos/linkedin.png" alt="linkedin" class="icono"></a>
-            <a href="https://github.com/JHOMT"><img src="Iconos/github.png" alt="github" class="icono"></a>
-        </section>
-        <section class="container2">
+        <section class="contenedor">
             <h1>Proyectos</h1>
             <p>En esta sección, te presento algunos de los proyectos en los que he trabajado, demostrando mi pasión por la ingeniería en sistemas e informática y mi habilidad para aplicar conocimientos en tecnologías actuales. Cada proyecto representa un desafío único y una oportunidad para aprender y crecer como profesional en el campo de la programación y el desarrollo de software.</p>
             <div class="Frontend">
                 <h1>Proyectos Frontend</h1>
-                <div class="fotos">
+                <div class="contenedor fotos">
                     <div class="divProyeto">
                         <a href="https://github.com/JHOMT/MusicMixWeb">
                             <img src="Imagenes/reproductor.png" alt="Reproductor" class="fotoproyecto">
@@ -89,7 +81,7 @@
             </div>
             <div class="backend">
                 <h1>Proyectos Backend</h1>
-                <div class="fotos">
+                <div class="contenedor fotos">
                     <div class="divProyeto">
                         <a href="https://github.com/JHOMT/ChallengeAluraLatam-ConversorG5">
                             <img src="Imagenes/Conversores.png" alt="Conversores" class="fotoproyecto">
@@ -115,18 +107,38 @@
     </main>
     <footer>
         <div class="footer">
-            <h2>Jhon Mendoza</h2>
-            <div class="iconos_footer">
-                <a href="https://www.linkedin.com/in/jhomt"><img src="Iconos/linkedin.png" alt="linkedin" class="iconos_footer"></a>
-                <a href="https://github.com/JHOMT"><img src="Iconos/github.png" alt="github" class="iconos_footer"></a>
+            <h2>Jhon Cleiver Mendoza Tiquillahuanca</h2>
+            <div class="social-icon-list">
+                <div class="icon-group">
+                    <i class="fab fa-facebook"></i>
+                    <span class="icon-text">
+                        Facebook
+                    </span>
+                    <span class="icon-bg"></span>
+                </div>
+                <div class="icon-group">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span class="icon-text">
+                        Email
+                    </span>
+                    <span class="icon-bg"></span>
+                </div>
+                <div class="icon-group">
+                    <i class="fab fa-github"></i>
+                    <span class="icon-text">
+                        Github
+                    </span>
+                    <span class="icon-bg"></span>
+                </div>
+                <div class="icon-group">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span class="icon-text">
+                        Linkedin
+                    </span>
+                    <span class="icon-bg"></span>
+                </div>
             </div>
-            <div class="correo_personal_footer">
-                <img src="Iconos/email.png" alt="email" class="iconos_footer">
-                <a href="mailto:jhomti2002@gmail.com" class="correo_link">
-                    jhomti2002@gmail.com</a>
-            </div>
-        </div>
-    </footer>
+        </footer>
     <script src="js/main.js"></script>
 </body>
 </html>

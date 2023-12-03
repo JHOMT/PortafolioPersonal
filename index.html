@@ -13,8 +13,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/46b7ceee20.js" crossorigin="anonymous"></script>
     <link rel="icon" href="Imagenes/logo.png">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/redes-sociales.css">
     <title>Portafolio</title>
     <script>
         const storageTheme = localStorage.getItem('theme');
@@ -25,135 +27,149 @@
 </head>
 <body>
     <header>
-        <nav class="logo_portafolio">
-            <a href="index.html"><img src="Imagenes/logo.png" alt="Logo JHOMT" class="logo_principal"></a>
-        </nav>
-        <nav class="correo_personal">
-            <a href="mailto:jhomti2002@gmail.com" class="correo_link">
-                <img src="Iconos/email.png" alt="email" class="iconoHeader">
-                <p>jhomti2002@gmail.com</p>
+        <div class="logo">
+            <a href="index.html">
+                <img src="Imagenes/logo.png" alt="Logo JHOMT" class="logo_principal">
             </a>
-        </nav>
-        <nav class="modo">
+        </div>
+        <a href="mailto:jhomti2002@gmail.com" class="correo_link">
+            <img src="Iconos/email.png" alt="email" class="iconoHeader">
+            <p>jhomti2002@gmail.com</p>
+        </a>
+        <div class="modo">
             <div class="main__switcher">
                 <input type="checkbox" class="main__check">
                 <div class="main__option"></div>
             </div>
             <img src="Iconos/soleado.png" alt="tema claro" id="sun" class="iconoHeader">
             <img src="Iconos/noche.png" alt="tema oscuro" id="moon" class="iconoHeader">
-        </nav>
-        <nav class="iconos_iformacion">
-            <div class="proyectoLink">
-                <a href="Proyectos.html" class="proyectos">
-                    <img src="Iconos/proyecto.png" alt="proyecto" class="iconoHeader" id="iconoHeader">
-                    <p> Proyectos</p>
-                </a>
-            </div>
-            <div class="informacionPLink">
-                <a href="Personal.html" class="personal">
-                    <img src="Iconos/informacion-personal.png" alt="informacion-personal" class="iconoHeader" id="iconoHeader">    
-                    <p>Personal</p>
-                </a>
-            </div>
+        </div>
+        <nav class="enlaces">
+            <a href="Proyectos.html" class="proyectos">
+                <img src="Iconos/proyecto.png" alt="proyecto" class="iconoHeader" >
+            </a>
+            <a href="Personal.html" class="personal">
+                <img src="Iconos/informacion-personal.png" alt="informacion-personal" class="iconoHeader">    
+            </a>
         </nav>
     </header>
-    <main>
-        <section class="container1">
+    <section class="contenedor contenido-principal">
+        <div class="container1">
             <a href="https://www.linkedin.com/in/jhomt"><img src="Iconos/linkedin.png" alt="linkedin" class="icono"></a>
             <a href="https://github.com/JHOMT"><img src="Iconos/github.png" alt="github" class="icono"></a>
+        </div>
+        <article class="informacion_entrada">
+            <div class="quien_soy" id="principal">
+                <div class="comment" id="comment">
+                    <div class="comment-content">
+                        <h2>Hola soy</h2>
+                    </div>
+                    <div class="comment-triangle"></div>
+                </div>
+                <h1>Jhon Mendoza</h1>
+                <p>Soy estudiante de Ingeniería de Sistemas en la UTP. Me especializo como desarrollador y backend Junior. Soy una persona apasionada por la tecnología y el desarrollo de software. Estoy comprometido en aprender y crecer constantemente en mi campo.</p>
+            </div>
+            <img src="Imagenes/jhomt.png" alt="Jhomt" class="imagen_informacion">
+        </article>
+    </section>
+    <main> 
+        <section class="habilidades">
+            <h1 class="titulo_habilidades">Que puedo hacer</h1>
+            <div class="habilidades_2">
+                <div class="tipos" >
+                    <div class="backend">
+                        <h2>Aplicaciones backend</h2>
+                        <p>En mi sección de desarrollo backend, destaco mi experiencia en el desarrollo de aplicaciones y sistemas que involucran tecnologías y lenguajes como Java. He trabajado en proyectos que abarcan el diseño y desarrollo de APIs, la gestión de bases de datos, la optimización de rendimiento y las pruebas y depuración de aplicaciones backend. Además, resalto mi capacidad para trabajar en equipos colaborativos, comunicar efectivamente y participar en metodologías ágiles. Estos proyectos reflejan mi habilidad para resolver problemas, implementar soluciones eficientes y aplicar las mejores prácticas en el desarrollo backend.</p>
+                    </div>
+                    <div class="frotend">
+                        <h2>programacion web</h2>
+                        <p>En mi enfoque frontend, utilizo HTML, CSS y JavaScript para construir interfaces de usuario dinámicas y responsivas. Mi objetivo es crear experiencias web atractivas y optimizadas, por lo que también he trabajado con frameworks y bibliotecas populares como React, Angular y Vue.js. Me apasiona la manipulación del DOM, la gestión del estado de la aplicación y la integración de APIs externas para crear aplicaciones web interactivas.</p>
+                    </div>
+                </div>
+                <div class="habiliades_img">
+                    <img src="Imagenes/programador.jpg" alt="">
+                </div>
+            </div>
         </section>
-        <section class="container2">
-            <section class="informacion_entrada">
-                <div class="quien_soy" id="principal">
-                    <div class="comment" id="comment">
-                        <div class="comment-content">
-                            <h2>Hola soy</h2>
-                        </div>
-                        <div class="comment-triangle"></div>
-                    </div>
-                    <h1>Jhon Mendoza</h1>
-                    <p class="parrafoC2">También conocido como JHOMT, y soy estudiante de Ingeniería de Sistemas en la UTP. Me especializo como desarrollador y backend Junior. Soy una persona apasionada por la tecnología y el desarrollo de software. Estoy comprometido en aprender y crecer constantemente en mi campo.</p>
+        <section class="informacion_personal">
+            <div class="informacion_vida">
+                <img src="Imagenes/diseño.png" alt="" class="informacion_imagen">
+                <div class="informacion">
+                    <p>
+                        Soy un apasionado programador, siempre buscando nuevos desafíos y oportunidades para crecer en el campo del desarrollo de software. Me caracterizo por mi enfoque analítico y resolutivo, encontrando soluciones creativas a problemas complejos. Disfruto trabajar en equipo y aprovechar las fortalezas de los demás para lograr resultados exitosos. Soy adaptable y aprendo rápidamente nuevas tecnologías. Mi dedicación y perseverancia me impulsan a superar obstáculos y alcanzar mis metas en cada proyecto en el que me involucro. Estoy constantemente buscando formas de expandir mis conocimientos y mantenerme actualizado en las últimas tendencias de programación. La pasión que tengo por la programación impulsa mi trabajo diario y me motiva a alcanzar nuevos niveles de excelencia en mi carrera.
+                    </p>
                 </div>
-                <img src="Imagenes/jhomt.png" alt="Jhomt" class="imagen_informacion">
-            </section>
-            <section class="habilidades">
-                <h1 class="titulo_habilidades">Que puedo hacer</h1>
-                <div class="habilidades_2">
-                    <div >
-                        <div class="backend">
-                            <h2>Aplicaciones backend</h2>
-                            <p>En mi sección de desarrollo backend, destaco mi experiencia en el desarrollo de aplicaciones y sistemas que involucran tecnologías y lenguajes como Java. He trabajado en proyectos que abarcan el diseño y desarrollo de APIs, la gestión de bases de datos, la optimización de rendimiento y las pruebas y depuración de aplicaciones backend. Además, resalto mi capacidad para trabajar en equipos colaborativos, comunicar efectivamente y participar en metodologías ágiles. Estos proyectos reflejan mi habilidad para resolver problemas, implementar soluciones eficientes y aplicar las mejores prácticas en el desarrollo backend.</p>
-                        </div>
-                        <div class="frotend">
-                            <h2>programacion web</h2>
-                            <p>En mi enfoque frontend, utilizo HTML, CSS y JavaScript para construir interfaces de usuario dinámicas y responsivas. Mi objetivo es crear experiencias web atractivas y optimizadas, por lo que también he trabajado con frameworks y bibliotecas populares como React, Angular y Vue.js. Me apasiona la manipulación del DOM, la gestión del estado de la aplicación y la integración de APIs externas para crear aplicaciones web interactivas.</p>
-                        </div>
-                    </div>
-                    <div class="habiliades_img">
-                        <img src="Imagenes/programador.jpg" alt="">
-                    </div>
-                </div>
-            </section>
-            <section class="informacion_personal">
-                <div class="informacion_vida">
-                    <img src="Imagenes/diseño.png" alt="" class="informacion_imagen">
-                    <div class="informacion">
-                        <p class="personalInfo">
-                            Soy un apasionado programador, siempre buscando nuevos desafíos y oportunidades para crecer en el campo del desarrollo de software. Me caracterizo por mi enfoque analítico y resolutivo, encontrando soluciones creativas a problemas complejos. Disfruto trabajar en equipo y aprovechar las fortalezas de los demás para lograr resultados exitosos. Soy adaptable y aprendo rápidamente nuevas tecnologías. Mi dedicación y perseverancia me impulsan a superar obstáculos y alcanzar mis metas en cada proyecto en el que me involucro. Estoy constantemente buscando formas de expandir mis conocimientos y mantenerme actualizado en las últimas tendencias de programación. La pasión que tengo por la programación impulsa mi trabajo diario y me motiva a alcanzar nuevos niveles de excelencia en mi carrera.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section class="proyectosImages">
-                <h1>Mis proyectos</h1>
-                <div class="proyectos2">
-                    <div class="contenedor_proyectos">
-                        <div class="imagenes_proyectos">
+            </div>
+        </section>
+        <section class="proyectosImages">
+            <h1>Mis proyectos</h1>
+            <div class="proyectos2">
+                <div class="contenedor_proyectos">
+                    <div class="imagenes_proyectos">
                         <img src="Imagenes/reproductor.png" alt="Reproductor">
-                        </div>
-                        <div class="imagenes_proyectos">
+                    </div>
+                    <div class="imagenes_proyectos">
                         <img src="Imagenes/portafolio.png" alt="Reproductor">
-                        </div>
-                        <div class="imagenes_proyectos">
+                    </div>
+                    <div class="imagenes_proyectos">
                         <img src="Imagenes/Programa.png" alt="Reproductor">
-                        </div>
-                    </div>
-                    <div class="contenedor_proyectos">
-                        <div class="imagenes_proyectos">
-                        <img src="Imagenes/Conversores.png" alt="Reproductor">
-                        </div>
-                        <div class="imagenes_proyectos">
-                        <img src="Imagenes/Snake.png" alt="Reproductor">
-                        </div>
-                    </div>
-                    <div class="contenedor_proyectos">
-                        <div class="imagenes_proyectos">
-                        <img src="Imagenes/Encriptador.png" alt="Reproductor">
-                        </div>
-                        <div class="imagenes_proyectos">
-                        <img src="Imagenes/Login.png" alt="Reproductor">
-                        </div>
-                        <div class="imagenes_proyectos">
-                        <img src="Imagenes/Barberia.png" alt="Reproductor">
-                        </div>
                     </div>
                 </div>
-            </section>
+                <div class="contenedor_proyectos">
+                    <div class="imagenes_proyectos">
+                        <img src="Imagenes/Conversores.png" alt="Reproductor">
+                    </div>
+                    <div class="imagenes_proyectos">
+                        <img src="Imagenes/Snake.png" alt="Reproductor">
+                    </div>
+                </div>
+                <div class="contenedor_proyectos">
+                    <div class="imagenes_proyectos">
+                        <img src="Imagenes/Encriptador.png" alt="Reproductor">
+                    </div>
+                    <div class="imagenes_proyectos">
+                        <img src="Imagenes/Login.png" alt="Reproductor">
+                    </div>
+                    <div class="imagenes_proyectos">
+                        <img src="Imagenes/Barberia.png" alt="Reproductor">
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
     <div class="footer">
-        <h2>Jhon Mendoza</h2>
-        <div class="iconos_footer">
-            <a href="https://www.linkedin.com/in/jhomt"><img src="Iconos/linkedin.png" alt="linkedin" class="iconos_footer"></a>
-            <a href="https://github.com/JHOMT"><img src="Iconos/github.png" alt="github" class="iconos_footer"></a>
+        <h2>Jhon Cleiver Mendoza Tiquillahuanca</h2>
+        <div class="social-icon-list">
+            <div class="icon-group">
+                <i class="fab fa-facebook"></i>
+                <span class="icon-text">
+                    Facebook
+                </span>
+                <span class="icon-bg"></span>
+            </div>
+            <div class="icon-group">
+                <i class="fa-regular fa-envelope"></i>
+                <span class="icon-text">
+                    Email
+                </span>
+                <span class="icon-bg"></span>
+            </div>
+            <div class="icon-group">
+                <i class="fab fa-github"></i>
+                <span class="icon-text">
+                    Github
+                </span>
+                <span class="icon-bg"></span>
+            </div>
+            <div class="icon-group">
+                <i class="fab fa-linkedin-in"></i>
+                <span class="icon-text">
+                    Linkedin
+                </span>
+                <span class="icon-bg"></span>
+            </div>
         </div>
-        <div class="correo_personal_footer">
-            <img src="Iconos/email.png" alt="email" class="iconos_footer">
-            <a href="mailto:jhomti2002@gmail.com" class="correo_link">
-                jhomti2002@gmail.com</a>
-        </div>
-    </div>
     </footer>
     <script src="js/main.js"></script>
 </body>

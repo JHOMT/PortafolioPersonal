@@ -16,10 +16,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;display=swap'><link rel="stylesheet" href="./style.css">    
+    <script src="https://kit.fontawesome.com/46b7ceee20.js" crossorigin="anonymous"></script>
     <link rel="icon" href="Imagenes/logo.png">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/button.css">  
-    <link rel="stylesheet" href="css/personal.css">
+    <link rel="stylesheet" href="css/redes-sociales.css">
     <title>Informacion personal</title>
     <script>
         const storageTheme = localStorage.getItem('theme');
@@ -30,165 +31,189 @@
 </head>
 <body>
     <header>
-        <nav class="logo_portafolio">
-            <a href="index.html"><img src="Imagenes/logo.png" alt="Logo JHOMT" class="logo_principal"></a>
-        </nav>
-        <nav class="correo_personal">
-            <a href="mailto:jhomti2002@gmail.com" class="correo_link">
-                <img src="Iconos/email.png" alt="email" class="iconoHeader">
-                <p>jhomti2002@gmail.com</p>
+        <div class="logo">
+            <a href="index.html">
+                <img src="Imagenes/logo.png" alt="Logo JHOMT" class="logo_principal">
             </a>
-        </nav>
-        <nav class="modo">
+        </div>
+        <a href="mailto:jhomti2002@gmail.com" class="correo_link">
+            <img src="Iconos/email.png" alt="email" class="iconoHeader">
+            <p>jhomti2002@gmail.com</p>
+        </a>
+        <div class="modo">
             <div class="main__switcher">
                 <input type="checkbox" class="main__check">
                 <div class="main__option"></div>
             </div>
             <img src="Iconos/soleado.png" alt="tema claro" id="sun" class="iconoHeader">
             <img src="Iconos/noche.png" alt="tema oscuro" id="moon" class="iconoHeader">
-        </nav>
-        <nav class="iconos_iformacion">
-            <div class="proyectoLink">
-                <a href="Proyectos.html" class="proyectos">
-                    <img src="Iconos/proyecto.png" alt="proyecto" class="iconoHeader">
-                    <p> Proyectos</p>
-                </a>
-            </div>
-            <div class="informacionPLink">
-                <a href="Personal.html" class="personal">
-                    <img src="Iconos/informacion-personal.png" alt="informacion-personal" class="iconoHeader">    
-                    <p>Personal</p>
-                </a>
-            </div>
+        </div>
+        <nav class="enlaces">
+            <a href="Proyectos.html" class="proyectos">
+                <img src="Iconos/proyecto.png" alt="proyecto" class="iconoHeader" >
+            </a>
+            <a href="Personal.html" class="personal ">
+                <img src="Iconos/informacion-personal.png" alt="informacion-personal" class="iconoHeader">    
+            </a>
         </nav>
     </header>
-    <main>
-        <section class="container1">
+    <section class="contenedor contenido-principal">
+        <div class="container1">
             <a href="https://www.linkedin.com/in/jhomt"><img src="Iconos/linkedin.png" alt="linkedin" class="icono"></a>
             <a href="https://github.com/JHOMT"><img src="Iconos/github.png" alt="github" class="icono"></a>
-        </section>
-        <section class="personal1">
-            <section class="informacion_entrada" >
-                <div class="quien_soy" ">
-                    <div class="comment" id="comment">
-                        <div class="comment-content">
-                            <h2>Hola soy</h2>
-                        </div>
-                        <div class="comment-triangle"></div>
+        </div>
+        <article class="informacion_entrada">
+            <div class="quien_soy" id="principal">
+                <div class="comment" id="comment">
+                    <div class="comment-content">
+                        <h2>Hola soy</h2>
                     </div>
-                    <h1>Jhon Mendoza</h1>
-                    <p class="parrafoC2">
-                        Soy JHOMT, estudiante de Ingeniería de Sistemas en la UTP, especializándome como desarrollador y backend Junior. Mi pasión por la tecnología me impulsa a aprender y crecer constantemente. Tengo sólidos conocimientos en desarrollo web, bases de datos y soluciones eficientes. Me destaco en el desarrollo backend, utilizando Java y Spring Boot para crear aplicaciones eficientes y de alto rendimiento. También tengo experiencia en el manejo de bases de datos con MySQL. Mi objetivo es contribuir en el desarrollo de soluciones tecnológicas, aportando pasión y dedicación. Estoy emocionado por las oportunidades que se presenten y ansioso por seguir aprendiendo y colaborando en proyectos innovadores.
-                    </p>
-                    <div class="descargaPDF">
-                        <div class="buttonConteiner">
-                            <a class="button" href="archivos/Curriculum JHON MENDOZA.pdf" download>
-                                <ul>
-                                    <li>Desacargar CV</li>
-                                    <li>Desacargando ...</li>
-                                </ul>
-                                <div>
-                                    <svg viewBox="0 0 24 24"></svg>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="comment-triangle"></div>
+                </div>
+                <h1>Jhon Mendoza</h1>
+                <p>
+                    Estudiante de Ingeniería de Sistemas en la UTP.
+                    Mi pasión por la tecnología me impulsa a aprender y crecer constantemente. Tengo sólidos conocimientos en
+                    desarrollo web, bases de datos y soluciones eficientes. Me destaco en el desarrollo backend, utilizando Java y
+                    Spring Boot para crear aplicaciones eficientes y de alto rendimiento. También tengo experiencia en el manejo 
+                    de bases de datos con MySQL. Mi objetivo es contribuir en el desarrollo de soluciones tecnológicas, aportando
+                    pasión y dedicación. Estoy emocionado por las oportunidades que se presenten y ansioso por seguir aprendiendo 
+                    y colaborando en proyectos innovadores.
+                </p>
+                <div class="descargaPDF">
+                    <div class="buttonConteiner">
+                        <a class="button" href="archivos/Curriculum JHON MENDOZA.pdf" download>
+                            <ul>
+                                <li>Desacargar CV</li>
+                                <li>Desacargando</li>
+                            </ul>
+                            <div>
+                                <svg viewBox="0 0 24 24"></svg>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <img src="Imagenes/jhomt.png" alt="Jhomt" class="imagen_informacion">
-            </section>
-            <div class="experiencia">
-                <h1>Experiencia Laboral</h1>
-                <div class="divExperiencia">
-                    <p>Durante mi proceso de formación, he ganado experiencia práctica a través de proyectos y actividades relacionadas con mi carrera. He participado en desafíos de programación, colaborando en equipos para desarrollar soluciones innovadoras utilizando tecnologías como Java, HTML, CSS y JavaScript. También he tenido la oportunidad de realizar prácticas en empresas de desarrollo de software, lo que me ha permitido aplicar mis conocimientos en entornos reales y mejorar mis habilidades técnicas.</p>
-                    <img src="Imagenes/R.png" alt="Practicas" class="fotoFormacion">
+            </div>
+            <img src="Imagenes/jhomt.png" alt="Jhomt" class="imagen_informacion img-personal">
+        </article>
+    </section>
+    <main>
+        <div class=" experiencia">
+            <h1>Experiencia Laboral</h1>
+            <div class="divExperiencia">
+                <p>Durante mi proceso de formación, he ganado experiencia práctica a través de proyectos y actividades relacionadas con mi carrera. He participado en desafíos de programación, colaborando en equipos para desarrollar soluciones innovadoras utilizando tecnologías como Java, HTML, CSS y JavaScript. También he tenido la oportunidad de realizar prácticas en empresas de desarrollo de software, lo que me ha permitido aplicar mis conocimientos en entornos reales y mejorar mis habilidades técnicas.</p>
+                <img src="Imagenes/R.png" alt="Practicas" class="fotoFormacion">
+            </div>
+        </div>
+        <div class=" formacion">
+            <h1>Educación y formación</h1>
+            <div class="divFormacion">
+                <img src="Imagenes/utp.jpg" alt="UTP" class="fotoFormacion">
+                <p>Soy un estudiante de ingeniería en sistemas e informática en la Universidad Tecnológica de Perú. Mi formación me ha proporcionado sólidos conocimientos en áreas clave como bases de datos, programación en Java, desarrollo web con HTML y CSS, y creación de experiencias interactivas con JavaScript. También me he mantenido actualizado con cursos y talleres adicionales para ampliar mis habilidades. Estoy emocionado por aplicar mis conocimientos y habilidades en un entorno laboral y contribuir al éxito de un equipo.</p>
+            </div>
+        </div>
+        <div class="habilidad">
+            <h1>Habilidades</h1>
+            <div class="divhabilidad">
+                <div class="Lenguage">
+                    <img src="Iconos/html.png" alt="HTML" class="logo-lenguaje">
+                    <p>HTML</p>
                 </div>
+                <div class="Lenguage">
+                    <img src="Iconos/css-3.png" alt="CSS" class="logo-lenguaje">
+                    <p>CSS</p>
+                </div>
+                <div class="Lenguage">
+                    <img src="Iconos/js.png" alt="JavaScript" class="logo-lenguaje">
+                    <p>JavaScript</p>
+                </div>
+                <div class="Lenguage">
+                    <img src="Iconos/java.png" alt="Java" class="logo-lenguaje">
+                    <p>Java</p>
+                </div>
+                <div class="Lenguage">
+                    <img src="Iconos/mysql.png" alt="MySQL" class="logo-lenguaje">
+                    <p>MySQL</p>
+                </div>
+            </div>
+        </div>
+        <div class="pasatiempos">
+            <h1>Pasatiempo</h1>
+            <div class="pasatiempoIconos">
+                <div class="Lenguage">
+                    <img src="Iconos/musica.png" alt="Musica" class="logo-lenguaje">
+                    <p>Escuchar Música</p>
+                </div>
+                <div class="Lenguage">
+                    <img src="Iconos/paleta-de-color.png" alt="Dibujar" class="logo-lenguaje">
+                    <p>Dibujar</p>
+                </div>
+                <div class="Lenguage">
+                    <img src="Iconos/controlador-de-videojuegos.png" alt="Videojuegos" class="logo-lenguaje">
+                    <p>Jugar Videojuegos</p>
+                </div>
+            </div>
+        </div>
+        <div class="formulario">
+            <form class="form"> 
+                <fieldset>
+                    <legend>Contactame</legend>
+                    <fieldset>
+                        <legend for="nombre">nombre:</legend>
+                        <input type="text" id="nombre" class="input-padron" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Email:</legend>
+                        <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Telefono:</legend>
+                        <input type="tel" id="telefono" class="input-padron" required placeholder="(xxx) xxx xxx xxx">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Mensaje</legend>
+                        <textarea name=""id="mesaje" class="input-padron"></textarea required>
+                    </fieldset>
+                    <input type="submit" value="Enviar Formulario" class="enviar">
                 
-            </div>
-            <div class="formacion">
-                <h1>Educación y formación</h1>
-                <div class="divFormacion">
-                    <img src="Imagenes/utp.jpg" alt="UTP" class="fotoFormacion">
-                    <p>Soy un estudiante de ingeniería en sistemas e informática en la Universidad Tecnológica de Perú. Mi formación me ha proporcionado sólidos conocimientos en áreas clave como bases de datos, programación en Java, desarrollo web con HTML y CSS, y creación de experiencias interactivas con JavaScript. También me he mantenido actualizado con cursos y talleres adicionales para ampliar mis habilidades. Estoy emocionado por aplicar mis conocimientos y habilidades en un entorno laboral y contribuir al éxito de un equipo.</p>
-                </div>
-            </div>
-            <div class="habilidadI">
-                <h1>Habilidades</h1>
-                <div class="divhabilidad">
-                    <div class="Lenguage">
-                        <img src="Iconos/html.png" alt="HTML" class="logos">
-                        <p>HTML</p>
-                    </div>
-                    <div class="Lenguage">
-                        <img src="Iconos/css-3.png" alt="CSS" class="logos">
-                        <p>CSS</p>
-                    </div>
-                    <div class="Lenguage">
-                        <img src="Iconos/js.png" alt="JavaScript" class="logos">
-                        <p>JavaScript</p>
-                    </div>
-                    <div class="Lenguage">
-                        <img src="Iconos/java.png" alt="Java" class="logos">
-                        <p>Java</p>
-                    </div>
-                    <div class="Lenguage">
-                        <img src="Iconos/mysql.png" alt="MySQL" class="logos">
-                        <p>MySQL</p>
-                    </div>
-                </div>
-            </div>
-            <div class="pasatiempos">
-                <h1>Pasatiempo</h1>
-                <div class="pasatiempoIconos">
-                    <div class="Lenguage">
-                        <img src="Iconos/musica.png" alt="Musica" class="logos">
-                        <p>Escuchar Música</p>
-                    </div>
-                    <div class="Lenguage">
-                        <img src="Iconos/paleta-de-color.png" alt="Dibujar" class="logos">
-                        <p>Dibujar</p>
-                    </div>
-                    <div class="Lenguage">
-                        <img src="Iconos/controlador-de-videojuegos.png" alt="Videojuegos" class="logos">
-                        <p>Jugar Videojuegos</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="formulario">
-                    <h1>Contactame</h1>
-                    <form class="from"> 
-                        <label for="nombreapellido">Nombre y Apellido
-                            <input type="text" id="nombreapellido" class="input-padron" required>
-                        </label>
-                        <label for="correoelectronico">Correo Electronico
-                            <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
-                        </label>
-                        <label for="telefono">Telefono
-                            <input type="tel" id="telefono" class="input-padron" required placeholder="(xxx) xxx xxx xxx">
-                        </label>
-                        <label for="mesaje">Mensaje
-                            <textarea name="" id="" cols="70" rows="10" id="mesaje" class="input-padron"></textarea required>
-                        </label>
-                        <input type="submit" value="Enviar Formulario" class="enviar">
-                    </form>
-                </div>
-            </div>
-        </section>
+                </fieldset>
+            </form>
+        </div>
     </main>
     <footer>
         <div class="footer">
-            <h2>Jhon Mendoza</h2>
-            <div class="iconos_footer">
-                <a href="https://www.linkedin.com/in/jhomt"><img src="Iconos/linkedin.png" alt="linkedin" class="iconos_footer"></a>
-                <a href="https://github.com/JHOMT"><img src="Iconos/github.png" alt="github" class="iconos_footer"></a>
+            <h2>Jhon Cleiver Mendoza Tiquillahuanca</h2>
+            <div class="social-icon-list">
+                <div class="icon-group">
+                    <i class="fab fa-facebook"></i>
+                    <span class="icon-text">
+                        Facebook
+                    </span>
+                    <span class="icon-bg"></span>
+                </div>
+                <div class="icon-group">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span class="icon-text">
+                        Email
+                    </span>
+                    <span class="icon-bg"></span>
+                </div>
+                <div class="icon-group">
+                    <i class="fab fa-github"></i>
+                    <span class="icon-text">
+                        Github
+                    </span>
+                    <span class="icon-bg"></span>
+                </div>
+                <div class="icon-group">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span class="icon-text">
+                        Linkedin
+                    </span>
+                    <span class="icon-bg"></span>
+                </div>
             </div>
-            <div class="correo_personal_footer">
-                <img src="Iconos/email.png" alt="email" class="iconos_footer">
-                <a href="mailto:jhomti2002@gmail.com" class="correo_link">
-                    jhomti2002@gmail.com</a>
-            </div>
-        </div>
-    </footer>
+        </footer>
     <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js'></script><script  src="./script.js"></script>
     <script src="js/main.js"></script>
     <script src="js/button.js"></script>
